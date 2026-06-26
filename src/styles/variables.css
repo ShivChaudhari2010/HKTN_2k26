@@ -1,0 +1,22 @@
+:root{
+
+--color-bg:#172836;
+
+--color-surface:#114C5A;
+
+--color-primary:#FFC801;
+
+--color-secondary:#FF9932;
+
+--color-white:#F1F6F4;
+
+--color-mint:#D9E8E2;
+
+--container:1280px;
+
+--radius:20px;
+
+--shadow:
+0 10px 40px rgba(0,0,0,.25);
+
+}

@@ -1,0 +1,46 @@
+*{
+transition:
+background-color .2s ease,
+color .2s ease,
+border-color .2s ease;
+}
+
+.hover-card{
+
+transition:
+transform .18s ease-out,
+box-shadow .18s ease-out;
+
+}
+
+.hover-card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.fade-up{
+
+animation:fadeUp .5s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}

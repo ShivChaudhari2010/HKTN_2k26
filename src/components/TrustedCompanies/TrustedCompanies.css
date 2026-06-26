@@ -1,0 +1,234 @@
+/* =====================================================
+   TRUSTED SECTION
+===================================================== */
+
+.trusted-section{
+
+    padding:100px 0;
+
+    overflow:hidden;
+
+}
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.trusted-title{
+
+    text-align:center;
+
+    font-size:2.3rem;
+
+    margin:20px 0;
+
+    color:var(--color-light);
+
+}
+
+.trusted-subtitle{
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+    color:#bfc8ce;
+
+    line-height:1.8;
+
+    font-size:1.05rem;
+
+}
+
+/* =====================================================
+   MARQUEE
+===================================================== */
+
+.marquee{
+
+    position:relative;
+
+    overflow:hidden;
+
+    width:100%;
+
+    mask-image:linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+
+    -webkit-mask-image:linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+    );
+
+}
+
+.marquee-content{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+
+    width:max-content;
+
+    animation:scrollCompany 26s linear infinite;
+
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.company-card{
+
+    min-width:190px;
+
+    padding:18px 26px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:var(--color-light);
+
+    font-family:"JetBrains Mono",monospace;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    transition:
+        transform .18s ease-out,
+        border-color .18s ease-out,
+        background .18s ease-out;
+
+}
+
+.company-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--color-primary);
+
+    background:rgba(255,255,255,.08);
+
+    color:var(--color-primary);
+
+}
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+@keyframes scrollCompany{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:992px){
+
+.trusted-section{
+
+    padding:80px 0;
+
+}
+
+.trusted-title{
+
+    font-size:2rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.trusted-title{
+
+    font-size:1.7rem;
+
+}
+
+.trusted-subtitle{
+
+    font-size:1rem;
+
+    margin-bottom:45px;
+
+}
+
+.company-card{
+
+    min-width:160px;
+
+    padding:16px 20px;
+
+    font-size:.9rem;
+
+}
+
+.marquee-content{
+
+    gap:20px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.trusted-section{
+
+    padding:70px 0;
+
+}
+
+.trusted-title{
+
+    font-size:1.45rem;
+
+}
+
+.company-card{
+
+    min-width:140px;
+
+    padding:14px 18px;
+
+    font-size:.82rem;
+
+}
+
+}
